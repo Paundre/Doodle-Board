@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Doodle Board</title>
+  </head>
+
+  <body>
+    <div class="headerContainer">
+    <h3 class="title">Magnetic Doodle Board</h3>
+    </div>
+
+    <div class="instructions">
+        <p>Remember this toy from the early 2000's? Hold down your mouse button and move your cursor on the magnetic board screen to draw. Explore the buttons to activate the rainbow mode and color picker. Also play with the slider to change the grid size!</p>
+    </div>
+
+    <div id="gridImage" style="position: relative;">
+        <div id="gridContainer"> </div>
+        <img src="board2.png" height="800px" width="1000px" alt="Grid Image">
+        <img src="rainbow.png" class="overlayBtn1" height="80px" width="80px">
+        <img src="black.png" class="overlayBtn2" height="75px" width="73px">
+        <img src="clear.png" class="overlayBtn3" height="80px" width="80px">
+        <img src="erease.png" class="overlayBtn4" height="80px" width="80px">
+        <img src="pinkBtn.png" class="overlayBtn5" height="80px" width="80px">
+        <div class="colorPick">
+            <input type="color" id="color">
+        </div>
+        <div class="sliderAndValue">
+            <input type="range" min="1" max="3" value="medium" id="slider">
+            <p class="value">medium</p>
+        </div>
+    </div>   
+    
+    <script src="index.js"></script>
+  </body>
